@@ -1,0 +1,56 @@
+.body {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+  .delete {
+    background-color: red;
+    border-radius: 10px;
+    padding: 2.5px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 8;
+    cursor: pointer;
+  }
+  .Tile {
+    border-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin: 12px;
+    transition: 0.25s;
+    background-color: rgb(245, 245, 245);
+    .tileBottom {
+      .name {
+        text-align: center;
+        font-weight: 700;
+        color: #000000;
+        font-size: 17px;
+        margin-block: 8px;
+      }
+      .prices_panel {
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        div {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 10px;
+          p {
+            margin: 2.5px;
+            font-weight: 800;
+            font-size: 12px;
+            &:nth-of-type(2) {
+              color: #000000;
+              font-weight: 600;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

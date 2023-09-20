@@ -1,0 +1,59 @@
+.SuccessPopup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        padding-bottom: 65px;
+        margin: auto;
+        margin-top: 50px;
+        width: 420px;
+        max-height: 230px;
+        border-radius: 25px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        @media (max-width: 720px) {
+            width: 90%;
+        }
+        .close {
+            border-radius: 100%;
+            padding: 10px;
+            background-color: rgb(255, 38, 38);
+            margin-left: auto;
+            margin-top: -15px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            * {
+                margin-inline: 10px;
+            }
+            .result {
+            }
+            h3 {
+                margin-block: 25px;
+                margin-inline: auto;
+                font-size: 24px;
+            }
+        }
+        .message {
+            max-height: 90px;
+            width: 90%;
+            text-align: center;
+            font-size: 19px;
+        }
+    }
+}

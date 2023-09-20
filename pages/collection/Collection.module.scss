@@ -1,0 +1,176 @@
+.Collection {
+    .images_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .banner {
+            height: 400px;
+            width: 100%;
+            max-width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            object-fit: cover;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            margin-top: -140px;
+            //margin-left: 45px;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 1) 0px 0px 5px 0px, rgba(0, 0, 0, 1) 0px 0px 1px 0px;
+        }
+    }
+    span {
+        font-weight: bold;
+    }
+    button {
+        margin-top: 18px;
+        cursor: pointer;
+        outline: 0;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 4px 9px;
+        font-size: 17px;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        color: rgb(47, 245, 47);
+        border-color: rgb(47, 245, 47);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+        &:hover {
+            transition: 0.5s;
+            color: #fff;
+            background-color: rgb(47, 245, 47);
+            border-color: rgb(47, 245, 47);
+        }
+    }
+    .addToCollection{
+        position: fixed;
+        width: 100%;
+        height: 60%;
+        z-index: 15;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .body {
+            box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+            background-color: rgba(225, 228, 232, 1);
+            border-radius: 5px;
+            width: 395px;
+            height: 400px;
+            padding: 15px;
+            .rowWrapper{
+                height: 260px;
+                overflow-y: scroll;
+                input{
+                    transform: scale(1.4)
+                }
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    background-color: #fff;
+                    height: 45px;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin: 10px;
+                    padding-inline: 10px;
+                }
+            }
+        }
+        .close {
+            border-radius: 100%;
+            padding: 7.5px;
+            background-color: rgb(255, 38, 38);
+            margin-left: 98%;
+            margin-top: -100px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    .sections {
+        margin-inline: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        .titleSection {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .collectionName {
+                color: #000;
+            }
+            .mediaLinks {
+                display: flex;
+                flex-direction: row;
+                margin-inline: 5px;
+            }
+        }
+        .authorSection {
+            margin-top: 10px;
+        }
+        .descriptionSection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-block: 25px;
+            h3{
+                font-weight: bold;
+            }
+            span{
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+        .profileInfoSection {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            div {
+                margin-inline: 35px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                *{
+                    margin-inline: 5px;
+                }
+            }
+        }
+        .items {
+            margin-bottom: 25px;
+            .itemsTitle {
+                font-weight: bold;
+                font-size: 24px;
+                border-bottom: 2px solid #ecf0f1;
+                padding: 25px;
+            }
+            .item {
+                padding: 0px 50px;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

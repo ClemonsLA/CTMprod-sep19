@@ -1,0 +1,203 @@
+.ItemOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: 1050px) {
+        flex-direction: column;
+    }
+    p {
+        word-break: break-all;
+        font-weight: 500;
+    }
+    em {
+        display: inline-block;
+        width: 215px;
+    }
+    .left {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image {
+            width: 596px;
+            height: 596px;
+            margin-top: 40px;
+            border-top-left-radius: 6.5px;
+            border-top-right-radius: 6.5px;
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            @media (max-width: 1050px) {
+                margin: 0;
+                border-radius: 0;
+                width: 596px;
+                height: 596px;
+            }
+        }
+        .likes_container {
+            border-bottom-left-radius: 6.5px;
+            border-bottom-right-radius: 6.5px;
+            width: 596px;
+            z-index: 2;
+            display: flex;
+            margin-bottom: 40px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            @media (max-width: 1050px) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-inline: 65px;
+            }
+            .like,
+            .dislike {
+                cursor: pointer;
+                opacity: 0.75;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            * {
+                margin-block: 7.5px;
+                margin-inline: 10px;
+            }
+        }
+    }
+    button {
+        margin-top: 35px;
+        width: 125px;
+        cursor: pointer;
+        outline: 0;
+        display: inline-block;
+        margin-inline: 15px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 18px;
+        border-radius: 2.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+    }
+    .downloadButton {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        color: rgb(212, 47, 245);
+        border-color: rgb(212, 47, 245);
+        &:hover {
+            transition: 0.2s;
+            color: #fff;
+            background-color: rgb(212, 47, 245);
+            border-color: rgb(212, 47, 245);
+        }
+    }
+    .infoPanel {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 15px auto;
+        margin-bottom: 30px;
+        font-size: 18px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        .subContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 392px;
+            max-width: 100%;
+            margin-left: 55px;
+            margin: auto;
+            justify-content: center;
+        }
+        .buttonWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-right: 100px;
+            align-self: center;
+            justify-self: center;
+            width: 80%;
+            .buyButton {
+                color: rgb(47, 245, 47);
+                border-color: rgb(47, 245, 47);
+                &:hover {
+                    transition: 0.2s;
+                    color: #fff;
+                    background-color: rgb(47, 245, 47);
+                    border-color: rgb(47, 245, 47);
+                }
+            }
+            .rentButton {
+                color: rgb(83, 47, 245);
+                border-color: rgb(83, 47, 245);
+                &:hover {
+                    transition: 0.2s;
+                    color: #fff;
+                    background-color: rgb(83, 47, 245);
+                    border-color: rgb(83, 47, 245);
+                }
+            }
+        }
+        em {
+            font-weight: 800;
+            font-style: normal;
+        }
+        span {
+            margin-left: 15px;
+            //font-style: italic;
+        }
+        .id {
+            font-size: 26px;
+            text-align: center;
+            max-width: 450px;
+            margin-bottom: 10px;
+            &:nth-of-type(2) {
+                margin-bottom: 45px;
+            }
+            span {
+                font-size: 26px;
+                font-weight: 800;
+            }
+        }
+        .audio {
+            margin-block: 35px;
+        }
+        .description {
+            span {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 800;
+                font-style: normal;
+            }
+            p {
+                margin-top: 20px;
+                padding-inline: 30px;
+                font-style: italic;
+            }
+        }
+    }
+    audio::-webkit-media-controls-panel {
+        background-color: rgba(0, 0, 0, 0.75);
+        color-scheme: dark;
+    }
+}

@@ -1,0 +1,60 @@
+.body {
+    position: relative;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .CollectionTile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 7.5px;
+        margin: 10px;
+        min-height: 347px;
+        max-width: 200px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding-inline: 25px;
+        position: relative;
+        .avatar {
+            border-radius: 5px;
+        }
+        .title {
+            font-weight: 800;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .bottomWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .authorName {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .tracks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            p:first-of-type {
+                font-weight: bold;
+            }
+        }
+    }
+    .delete {
+        background-color: red;
+        border-radius: 10px;
+        padding: 2.5px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        z-index: 5;
+    }
+}

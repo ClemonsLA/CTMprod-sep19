@@ -1,0 +1,31 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+body {
+  color: #696969;
+  //background: #0f1318;
+}
+
+.dark {
+  background-color: #0f1318;
+}
+
+.light {
+  background-color: #fff;
+}
+
+img {
+  // Make images not selectable
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.chosen {
+  background-color: rgba(0, 0, 0, 0.15);
+}

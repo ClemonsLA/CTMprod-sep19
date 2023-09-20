@@ -1,0 +1,138 @@
+.BrowseCharts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h1 {
+        font-weight: 800;
+        font-size: 42px;
+        margin-top: 55px;
+        color: #696969;
+    }
+    .select {
+        width: 195px;
+        background-color: rgba(0, 0, 0, 0.05);
+        padding: 5px 12px;
+        margin-block: 25px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #24292e;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        border: 1px solid #e1e4e8;
+        border-radius: 6px;
+        outline: none;
+        box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+        :focus {
+            border-color: #0366d6;
+            outline: none;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        }
+    }
+    .music_types {
+        margin-inline: 25px;
+        width: 100%;
+        color: #696969;
+        display: flex;
+        align-self: center;
+        margin-block: 25px;
+        flex-direction: row;
+        justify-content: space-around;
+        .slide {
+            padding: 20px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 15px;
+            margin-inline: 25px;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+    .top100 {
+        width: 606px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        border-radius: 2.5px;
+        align-items: center;
+        cursor: pointer;
+        margin-block: 25px 55px;
+        .header {
+            border-radius: 2.5px;
+            font-size: 23px;
+            padding-block: 15px;
+            width: 100%;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+            background-color: #2e2f49;
+        }
+        .bottom {
+            border-radius: 2.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            padding-block: 12.5px;
+            p {
+                margin: 0;
+            }
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .author {
+                font-weight: 500;
+            }
+            .place {
+                display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+                width: 100%;
+                height: 110px;
+                justify-content: space-around;
+                &:first-of-type {
+                    border-top: 1px solid rgba(255, 255, 255, 0.25);
+                }
+                > p {
+                    padding: 15px 35px;
+                    margin-block: 5px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.25);
+                    font-weight: 800;
+                    font-size: 26px;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    padding-block: 10px;
+                    justify-content: space-around;
+                    flex:1;
+                    align-items: center;
+                    & > p {
+                        margin-block: 10px;
+                    }
+                }
+                .avatar {
+                    border-radius: 5px;
+                    display: flex;
+                    justify-self: center;
+                    align-self: center;
+                    margin-right: 25px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

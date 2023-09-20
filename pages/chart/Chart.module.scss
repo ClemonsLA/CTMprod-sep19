@@ -1,0 +1,93 @@
+.Chart {
+    display: flex;
+    flex-direction: column;
+    margin-block: 35px;
+    align-items: center;
+    min-height: 50vh;
+    .header {
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
+    .wrapper {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 90%;
+        border-radius: 5px;
+        * {
+            border-radius: 3.5px;
+        }
+        .placeHeader {
+            background-color: rgba(0, 0, 0, 1);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            justify-content: space-around;
+            transform: scale(1);
+            > p,
+            span {
+                text-align: center;
+                margin-inline: auto;
+                font-weight: 800;
+                font-size: 20px;
+                width: 70px;
+                align-self: center;
+                &:first-of-type {
+                    margin-inline: auto;
+                }
+            }
+            /* >span{
+                min-width: 95px;
+            }*/
+        }
+        .place {
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: row;
+            &:nth-of-type(2n) {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            width: 100%;
+            height: 100px;
+            justify-content: space-around;
+            transform: scale(1);
+            cursor: pointer;
+            &:first-of-type {
+                border-top: 1px solid rgba(255, 255, 255, 0.25);
+            }
+            &:hover {
+                transition: 0.1s;
+                background-color: rgba(255, 255, 255, 0.01);
+            }
+            > * {
+                margin-inline: auto;
+            }
+            > p {
+                padding: 15px 35px;
+                margin-block: auto;
+                font-weight: 700;
+                font-size: 16px;
+                width: 70px;
+                text-align: center;
+            }
+            .info {
+                display: flex;
+                flex-direction: row;
+                padding-block: 10px;
+                justify-content: center;
+                align-items: center;
+                & > p {
+                    margin-block: 10px;
+                }
+            }
+            .avatar {
+                border-radius: 10px;
+                display: flex;
+                align-self: center;
+                object-fit: cover;
+            }
+        }
+    }
+}

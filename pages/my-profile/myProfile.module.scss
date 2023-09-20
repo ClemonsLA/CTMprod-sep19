@@ -1,0 +1,194 @@
+.MyProfile {
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+    h4 {
+        margin-inline: auto;
+        width: 80%;
+        border-bottom: 2px solid #ecf0f1;
+        padding: 25px;
+    }
+    .error{
+        color: red;
+        font-size: 14px;
+        margin-block: 5px 7.5px;
+    }
+    .nft {
+        position: relative;
+    }
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        p {
+            margin-bottom: 35px;
+            width: 100%;
+            word-break: break-word;
+            text-align: center;
+        }
+    }
+    .descriptionEditing {
+        display: flex;
+        flex-direction: column;
+        div {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    label {
+        padding-left: 15px;
+    }
+    input,
+    textarea {
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 155px;
+        padding: 5px 12px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #24292e;
+        max-width: 90vw;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        border: 1px solid #e1e4e8;
+        border-radius: 6px;
+        margin-block: 7.5px;
+        outline: none;
+        box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+        &:focus {
+            border-color: #0366d6;
+            outline: none;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        }
+    }
+    textarea{
+        width: 70vw;
+        height: 100px;
+    }
+    .collectionsHeader {
+        font-size: 14px;
+        margin-inline: auto;
+        width: 80%;
+        border-bottom: 2px solid #ecf0f1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h3 {
+            margin-left: 20px;
+        }
+        .plus {
+            background-color: rgb(47, 245, 47);
+            border-radius: 100%;
+            padding: 5px;
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        }
+    }
+    .hiddenButtonsWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .userInfo {
+        display: flex;
+        flex-direction: row;
+        margin-block: 55px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .subInfo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .avatar {
+            border-radius: 15px;
+            object-fit: 100%;
+        }
+        .info {
+            margin: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .coins {
+                padding-left: 15px;
+                font-size: 24px;
+                margin: 0px;
+            }
+            .buyCoins {
+                margin-top: 35px;
+                width: 125px;
+                cursor: pointer;
+                outline: 0;
+                display: inline-block;
+                margin-inline: auto;
+                margin-bottom: 15px;
+                font-weight: 600;
+                line-height: 1.5;
+                text-align: center;
+                background-color: transparent;
+                border: 1px solid transparent;
+                padding: 6px 12px;
+                font-size: 18px;
+                border-radius: 2.25rem;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
+                color: rgb(39, 2, 204);
+                border-color: rgb(39, 2, 204);
+                &:hover {
+                    transition: 0.2s;
+                    color: #fff;
+                    background-color: rgb(39, 2, 204);
+                    border-color: rgb(39, 2, 204);
+                }
+            }
+            p {
+                font-weight: 700;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+        .name {
+            display: flex;
+            flex-direction: column;
+            span {
+                font-weight: 700;
+                font-size: 21px;
+            }
+        }
+    }
+    .ownedLibrary,
+    .rentedLibrary {
+        margin: 10px;
+        min-height: 360px;
+        background-color: rgba(97, 100, 255, 0.05);
+        display: flex;
+        border-radius: 10px;
+        max-width: 1200px;
+        margin-inline: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        .empty {
+            display: flex;
+            align-self: center;
+        }
+    }
+    .ownedLibrary {
+        background-color: rgba(97, 100, 255, 0.05);
+    }
+    .rentedLibrary {
+        background-color: rgba(161, 91, 253, 0.05);
+    }
+}

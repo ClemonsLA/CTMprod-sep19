@@ -1,0 +1,18 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin-block: 55px;
+    }
+    p{
+        padding-inline: 165px;
+        margin-block: 30px;
+        font-size: 20px;
+        text-align: center;
+        &:last-of-type{
+            margin-bottom: 85px;
+        }
+    }
+}

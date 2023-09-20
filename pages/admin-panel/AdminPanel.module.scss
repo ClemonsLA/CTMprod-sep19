@@ -1,0 +1,137 @@
+.AdminPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 25px;
+    h3 {
+        font-size: 25px;
+        margin-block: 85px 45px;
+    }
+    button {
+        cursor: pointer;
+        width: 175px;
+        outline: 0;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 3px 6px;
+        font-size: 18px;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+    }
+    .blackflagUser {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 3.5px;
+        &:nth-of-type(1) {
+            background-color: rgb(150, 150, 150);
+            color: #000;
+        }
+        p {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            margin-inline: auto;
+            align-self: center;
+        }
+    }
+    .change {
+        color: rgb(47, 245, 47);
+        border-color: rgb(47, 245, 47);
+        &:hover {
+            transition: 0.5s;
+            color: #fff;
+            background-color: rgb(47, 245, 47);
+            border-color: rgb(47, 245, 47);
+        }
+    }
+    .delete {
+        color: rgb(245, 47, 73);
+        border-color: rgb(245, 47, 73);
+        &:hover {
+            transition: 0.5s;
+            color: #fff;
+            background-color: rgb(245, 47, 73);
+            border-color: rgb(245, 47, 73);
+        }
+    }
+    .blackflag {
+        color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+        &:hover {
+            transition: 0.5s;
+            color: #fff;
+            background-color: rgb(0, 0, 0);
+            border-color: rgb(0, 0, 0);
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-self: flex-start;
+    }
+    span {
+        margin-block: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-self: flex-start;
+    }
+    .row {
+        &:first-of-type {
+            margin-top: 35px;
+        }
+        display: flex;
+        flex-direction: row;
+        width: 725px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .column {
+        h4 {
+            font-size: 22px;
+        }
+        margin-block: 36px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    input,
+    textarea {
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 255px;
+        height: 25px;
+        padding: 5px 12px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #24292e;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        border: 1px solid #e1e4e8;
+        border-radius: 6px;
+        outline: none;
+        box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+        @media (max-width: 720px) {
+            width: 90%;
+        }
+        &:focus {
+            border-color: #0366d6;
+            outline: none;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        }
+    }
+}

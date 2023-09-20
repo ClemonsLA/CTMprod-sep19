@@ -1,0 +1,1 @@
+export const genreList = ["Rap", "EDM", "Tech House", "House", "Techno", "Melodic Techno", "Drum and Bass", "Future Bass", "Dubstep", "Trance", "Trap", "Garage", "Nu Disco", "Rock", "Alternative", "Heavy Metal", "Grunge", "Blues", "Punk", "Progressive", "Hip-Hop", "Trap-music", "Hip-Hop beat producer", "R&B", "Pop", "Dance-Pop", "K-Pop", "J-Pop", "Vocals", "Singers", "Rappers"];

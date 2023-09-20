@@ -1,0 +1,50 @@
+/*.Sidebar{
+    background-color: black;
+    position: fixed;
+    width: 230px;
+    height: 100vh;
+    padding-block: 35px;
+    .hidden{
+        display: none;
+    }
+    .logo{
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            padding-block: 15px;
+            cursor: pointer;
+            background-color: aqua;
+            
+        
+            img {
+                width: 20px;
+                height: 20px;
+                margin-inline: 15px;
+                color: #fff;
+            }
+
+            }
+        div{
+            ul{
+                padding: 0;
+                list-style: none;
+                background-color: antiquewhite;
+                li{
+                    padding-block: 15px;
+                    padding-left: 25px;
+                    background-color: black;
+                }
+        }
+        }
+    }
+}*/

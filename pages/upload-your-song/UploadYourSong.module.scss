@@ -1,0 +1,45 @@
+.UploadYourSong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    .left {
+        min-width: 500px;
+        height: 600px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 0px;
+            width: 450px;
+            margin-block: 35px;
+            color: #696969;
+
+            text-shadow: 1px 2px 3px white, 
+            0 4px 2px #696969;
+        }
+    }
+    .right {
+        min-width: 500px;
+        height: 600px;
+        background-size: cover;
+        flex: 1;
+    }
+}
+.notLogged {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        width: inherit;
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        margin: 0;
+    }
+}

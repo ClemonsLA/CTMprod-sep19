@@ -1,0 +1,63 @@
+.Wallet{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    iframe{
+        border: 1px solid rgba(0,0,0,0.15);
+    }
+    h3{
+        font-size: 25px;
+        margin-block: 85px 45px;
+    }
+    .row{
+        &:first-of-type{
+            margin-top: 35px;
+        }
+        min-width: 625px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        flex-direction: row;
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-self: flex-start;
+        }
+        span{
+            margin-block: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            display: flex;
+            justify-self: flex-start;
+        }
+    }
+    button {
+        margin-block: 35px;
+        cursor: pointer;
+        outline: 0;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 21px;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        color: rgb(47, 245, 47);
+        border-color: rgb(47, 245, 47);
+        &:hover {
+            transition: 0.5s;
+            color: #fff;
+            background-color: rgb(47, 245, 47);
+            border-color: rgb(47, 245, 47);
+        }
+    }
+}

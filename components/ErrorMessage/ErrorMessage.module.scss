@@ -1,0 +1,21 @@
+.ErrorMessage{
+    position: fixed;
+    margin-bottom: 425px;  
+    width: 455px;
+    height: 70px;
+    background-color: rgba(255, 0, 0, 0.808);
+    border-radius: 12.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .image{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    p{
+        color: #000;
+        font-weight: 500;
+        font-size: 17px;
+    }
+}
